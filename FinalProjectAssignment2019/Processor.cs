@@ -518,7 +518,6 @@ namespace FinalProjectAssignment2019
             Console.WriteLine("___________________________________________________________\n");
             if (relevantLawyers.Count > 0)// Add relevenat lawyer to case
             {
-
                 appointment.LawyerID = relevantLawyers[0].ID;
                 appointment.LawyerName = relevantLawyers[0].FirstName;
                 appointment.TypeOfLawyer = relevantLawyers[0].TypeOfLawyer;
