@@ -507,6 +507,7 @@ namespace FinalProjectAssignment2019
             appointment.ClientID = client.Id;
             AppointmentDateAndTime(appointment);
 
+
             List<MeetingRoom> availableMeetingRoom = meetingRooms.Where(x => x.isAvailable(appointment)).ToList();
             List<Lawyer> relevantLawyers = lawyers.Where(x => x.Specialization == client.CaseType && x.IsAvailable(appointment)).ToList(); //Creates a list with the relevant lawyers based on the clients need of caseType and check if they are available
             Console.WriteLine($"___________________________________________________________\nHere is a list of all lawyers specialized in {client.CaseType}:");
